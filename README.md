@@ -6,12 +6,6 @@ Damas é um jogo popular de tabuleiro 8 x 8 em que as peças ocupam somente as c
 ![Preview](picture.png)
 
 
-
-Link Preview do Jogo:
-
-![Jogo online](https://alessandradocouto.github.io/Jogo-Dama/)
-
-
 Função que muda a cor da peças do tabuleiro, baseada na escolha do item selecionado.
 
 
@@ -45,6 +39,12 @@ Função que guarda a o indice das peças localizadas na parte escura do tabulei
 - Movimentos válidos
 
 
+
+Para iniciar a aplicação:
+    
+    npm install
+    
+    npm start
 
 
 
