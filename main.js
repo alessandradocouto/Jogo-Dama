@@ -123,22 +123,12 @@ function startGame () {
         dragDropGame();
     }
 
-
-    // const diagonalMove = () => {
-
-        
-
-    //     return diagonal;
-    // }
-
-
     const moveItems = (content, move, element) => {
 
         if( content[move] === element ) {
             element.append(dragged);
         }
     }
-
 
     const indexDragStar = (content) => {
         let indexDragged;
