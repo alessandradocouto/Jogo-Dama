@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Dama</title>
+    <meta name="author" content="Alessandra ADC">
+    <meta name="description" content="">
+    <meta name="keywords" content="html5, css3, jogo, responsivo, vanilla script">
+    <meta name="google" content="notranslate" />
+    <meta name="robots" content="..., ..." />
+    <meta name="googlebot" content="..., ..." />  
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- meu css -->
+    <link href="main.css" rel="stylesheet">
+</head>
+<body>
+    <section class="max-container">
+        <section class="container">
+            <div class="wrapper">
+                <p class="text-player">Jogador beta</p>
+                <section class="container-game">
+                    <div class="game-items">
+                    </div>
+                </section>
+                <p class="text-player">Jogador Alfa</p>
+            </div>
+        </section>
+        <section class="container-style">
+            <h2 class="style-title">Configurações de estilo</h2>
+            <article class="style-player">
+                <h3 class="style-player-title">Jogador Alfa</h3>
+                <div class="style-color">
+                    <p class="style-color-text">Cor das peças</p>
+                    <input type="color" class="color-alfa" name="color-alfa" value="">
+                </div>
+            </article>
+            <article class="style-player">
+                <h3 class="style-player-title">Jogador Beta</h3>
+                <div class="style-color">
+                    <p class="style-color-text">Cor das peças</p>
+                    <input type="color" class="color-beta" name="color-beta" value="">
+                </div>
+            </article>
+        </section>
+        <section class="container-reset">
+            <h2 class="style-title">Geral</h2>
+            <div class="reset-button">
+                <button type="reset" id="reset" value="Reset">Reiniciar peças</button>
+            </div>
+        </section>
+
+    </section>
+    <script src="main.js"></script>
+</body>
+</html>
