@@ -3,7 +3,7 @@
 Damas é um jogo popular de tabuleiro 8 x 8 em que as peças ocupam somente as casas de uma determinada cor. 
 
 
-![wallpaper Java](picture.png)
+![Preview](picture.png)
 
 
 <b>Este teste possui</b> 💥

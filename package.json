@@ -1,0 +1,20 @@
+{
+  "name": "jogo-dama",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alessandradocouto/Jogo-Dama.git"
+  },
+  "author": "Alessandra Couto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alessandradocouto/Jogo-Dama/issues"
+  },
+  "homepage": "https://github.com/alessandradocouto/Jogo-Dama#readme"
+}

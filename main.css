@@ -1,0 +1,546 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.max-container{
+    display: -ms-grid;
+    display: grid; 
+    -ms-grid-columns: 1fr 20px 1fr 20px 1fr; 
+    grid-template-columns: repeat(3, 1fr); 
+    -ms-grid-rows: 1fr 10px 1fr; 
+    grid-template-rows: repeat(2, 1fr); 
+    gap: 10px 20px; 
+        grid-template-areas: 
+      "container container container-style"
+      "container container container-reset"; 
+    max-width: 1024px;
+}
+
+.wrapper{
+    max-width: 80%; 
+    margin: 1em auto;
+}
+
+.container{
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: container;
+    background-color: rgb(232, 232, 232);
+}
+
+.text-player{
+    text-align: center;
+    padding: 1.3em;
+    text-transform: uppercase;
+}
+
+.container-style, .container-reset{
+    padding: 1.1em;
+    text-align: left;
+    background-color: rgb(232, 232, 232);
+}
+
+.container-style{
+    -ms-grid-row: 1;
+    -ms-grid-column: 5;
+    grid-area: container-style;
+}
+
+.container-reset{
+    -ms-grid-row: 3;
+    -ms-grid-column: 5;
+    grid-area: container-reset;
+}
+
+.style-title{
+    font-size: 1.2em;
+    padding: 0 0 0.75em;
+    font-weight: 700;
+}
+
+.style-player-title{
+    font-size: 1em;
+    font-weight: 700;
+}
+
+.style-color{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 1.25em;
+}
+
+.style-color-text{
+    font-size: 0.95em;
+}
+
+.color-alfa, .color-beta{
+    max-width: 15%;
+    margin-left: 2em;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.game-items{
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[8];
+    grid-template-columns: repeat(8, 1fr);
+    -ms-grid-rows: (50px)[8];
+    grid-template-rows: repeat(8, 50px);
+    grid-auto-flow: row;
+    -webkit-box-shadow: 1px 2px 3px 2px #080707;
+            box-shadow: 1px 2px 3px 2px #080707;
+    background-color: #ffffff;
+}
+
+.game-items > *:nth-child(1){
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+}
+
+.game-items > *:nth-child(2){
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+}
+
+.game-items > *:nth-child(3){
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+}
+
+.game-items > *:nth-child(4){
+    -ms-grid-row: 1;
+    -ms-grid-column: 4;
+}
+
+.game-items > *:nth-child(5){
+    -ms-grid-row: 1;
+    -ms-grid-column: 5;
+}
+
+.game-items > *:nth-child(6){
+    -ms-grid-row: 1;
+    -ms-grid-column: 6;
+}
+
+.game-items > *:nth-child(7){
+    -ms-grid-row: 1;
+    -ms-grid-column: 7;
+}
+
+.game-items > *:nth-child(8){
+    -ms-grid-row: 1;
+    -ms-grid-column: 8;
+}
+
+.game-items > *:nth-child(9){
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+}
+
+.game-items > *:nth-child(10){
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+}
+
+.game-items > *:nth-child(11){
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+}
+
+.game-items > *:nth-child(12){
+    -ms-grid-row: 2;
+    -ms-grid-column: 4;
+}
+
+.game-items > *:nth-child(13){
+    -ms-grid-row: 2;
+    -ms-grid-column: 5;
+}
+
+.game-items > *:nth-child(14){
+    -ms-grid-row: 2;
+    -ms-grid-column: 6;
+}
+
+.game-items > *:nth-child(15){
+    -ms-grid-row: 2;
+    -ms-grid-column: 7;
+}
+
+.game-items > *:nth-child(16){
+    -ms-grid-row: 2;
+    -ms-grid-column: 8;
+}
+
+.game-items > *:nth-child(17){
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+}
+
+.game-items > *:nth-child(18){
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+}
+
+.game-items > *:nth-child(19){
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+}
+
+.game-items > *:nth-child(20){
+    -ms-grid-row: 3;
+    -ms-grid-column: 4;
+}
+
+.game-items > *:nth-child(21){
+    -ms-grid-row: 3;
+    -ms-grid-column: 5;
+}
+
+.game-items > *:nth-child(22){
+    -ms-grid-row: 3;
+    -ms-grid-column: 6;
+}
+
+.game-items > *:nth-child(23){
+    -ms-grid-row: 3;
+    -ms-grid-column: 7;
+}
+
+.game-items > *:nth-child(24){
+    -ms-grid-row: 3;
+    -ms-grid-column: 8;
+}
+
+.game-items > *:nth-child(25){
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+}
+
+.game-items > *:nth-child(26){
+    -ms-grid-row: 4;
+    -ms-grid-column: 2;
+}
+
+.game-items > *:nth-child(27){
+    -ms-grid-row: 4;
+    -ms-grid-column: 3;
+}
+
+.game-items > *:nth-child(28){
+    -ms-grid-row: 4;
+    -ms-grid-column: 4;
+}
+
+.game-items > *:nth-child(29){
+    -ms-grid-row: 4;
+    -ms-grid-column: 5;
+}
+
+.game-items > *:nth-child(30){
+    -ms-grid-row: 4;
+    -ms-grid-column: 6;
+}
+
+.game-items > *:nth-child(31){
+    -ms-grid-row: 4;
+    -ms-grid-column: 7;
+}
+
+.game-items > *:nth-child(32){
+    -ms-grid-row: 4;
+    -ms-grid-column: 8;
+}
+
+.game-items > *:nth-child(33){
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+}
+
+.game-items > *:nth-child(34){
+    -ms-grid-row: 5;
+    -ms-grid-column: 2;
+}
+
+.game-items > *:nth-child(35){
+    -ms-grid-row: 5;
+    -ms-grid-column: 3;
+}
+
+.game-items > *:nth-child(36){
+    -ms-grid-row: 5;
+    -ms-grid-column: 4;
+}
+
+.game-items > *:nth-child(37){
+    -ms-grid-row: 5;
+    -ms-grid-column: 5;
+}
+
+.game-items > *:nth-child(38){
+    -ms-grid-row: 5;
+    -ms-grid-column: 6;
+}
+
+.game-items > *:nth-child(39){
+    -ms-grid-row: 5;
+    -ms-grid-column: 7;
+}
+
+.game-items > *:nth-child(40){
+    -ms-grid-row: 5;
+    -ms-grid-column: 8;
+}
+
+.game-items > *:nth-child(41){
+    -ms-grid-row: 6;
+    -ms-grid-column: 1;
+}
+
+.game-items > *:nth-child(42){
+    -ms-grid-row: 6;
+    -ms-grid-column: 2;
+}
+
+.game-items > *:nth-child(43){
+    -ms-grid-row: 6;
+    -ms-grid-column: 3;
+}
+
+.game-items > *:nth-child(44){
+    -ms-grid-row: 6;
+    -ms-grid-column: 4;
+}
+
+.game-items > *:nth-child(45){
+    -ms-grid-row: 6;
+    -ms-grid-column: 5;
+}
+
+.game-items > *:nth-child(46){
+    -ms-grid-row: 6;
+    -ms-grid-column: 6;
+}
+
+.game-items > *:nth-child(47){
+    -ms-grid-row: 6;
+    -ms-grid-column: 7;
+}
+
+.game-items > *:nth-child(48){
+    -ms-grid-row: 6;
+    -ms-grid-column: 8;
+}
+
+.game-items > *:nth-child(49){
+    -ms-grid-row: 7;
+    -ms-grid-column: 1;
+}
+
+.game-items > *:nth-child(50){
+    -ms-grid-row: 7;
+    -ms-grid-column: 2;
+}
+
+.game-items > *:nth-child(51){
+    -ms-grid-row: 7;
+    -ms-grid-column: 3;
+}
+
+.game-items > *:nth-child(52){
+    -ms-grid-row: 7;
+    -ms-grid-column: 4;
+}
+
+.game-items > *:nth-child(53){
+    -ms-grid-row: 7;
+    -ms-grid-column: 5;
+}
+
+.game-items > *:nth-child(54){
+    -ms-grid-row: 7;
+    -ms-grid-column: 6;
+}
+
+.game-items > *:nth-child(55){
+    -ms-grid-row: 7;
+    -ms-grid-column: 7;
+}
+
+.game-items > *:nth-child(56){
+    -ms-grid-row: 7;
+    -ms-grid-column: 8;
+}
+
+.game-items > *:nth-child(57){
+    -ms-grid-row: 8;
+    -ms-grid-column: 1;
+}
+
+.game-items > *:nth-child(58){
+    -ms-grid-row: 8;
+    -ms-grid-column: 2;
+}
+
+.game-items > *:nth-child(59){
+    -ms-grid-row: 8;
+    -ms-grid-column: 3;
+}
+
+.game-items > *:nth-child(60){
+    -ms-grid-row: 8;
+    -ms-grid-column: 4;
+}
+
+.game-items > *:nth-child(61){
+    -ms-grid-row: 8;
+    -ms-grid-column: 5;
+}
+
+.game-items > *:nth-child(62){
+    -ms-grid-row: 8;
+    -ms-grid-column: 6;
+}
+
+.game-items > *:nth-child(63){
+    -ms-grid-row: 8;
+    -ms-grid-column: 7;
+}
+
+.game-items > *:nth-child(64){
+    -ms-grid-row: 8;
+    -ms-grid-column: 8;
+}
+
+.fill{
+    background-color:#81721a;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.box{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+
+.item-alfa{
+    background-color: #FF0000;
+    width: 35px;
+    height: 35px;
+    border:none;
+    border-radius: 50%;
+    -webkit-box-shadow: 2px 1px 2px 1px rgba(0, 0, 0, .5);
+            box-shadow: 2px 1px 2px 1px rgba(0, 0, 0, .5);
+    cursor: pointer;
+}
+
+.item-beta{
+    background-color: #000000;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border:none;
+    -webkit-box-shadow: 2px 1px 2px 1px rgba(0, 0, 0, .5);
+            box-shadow: 2px 1px 2px 1px rgba(0, 0, 0, .5);
+    cursor: pointer;
+}
+
+#reset{
+    display: block;
+    margin: auto;
+    padding: 0.75em 2.75em;
+    font-size: 0.8em;
+    font-weight: bold;
+    color: #2f5628;
+    background-color: #9cd17a;
+    border: none;
+    border-radius: 5px 5px;
+    cursor: pointer;
+}
+
+#reset:hover{
+    background-color: #b4ef9d;
+}
+
+@media (max-width: 600px){
+    .max-container{
+        -ms-grid-columns: 200px 1fr 200px;
+        grid-template-columns: 200px 1fr 200px;
+        -ms-grid-rows: auto 1fr auto;
+        grid-template-rows: auto 1fr auto;
+  }
+    .max-container > *:nth-child(1){
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+  }
+    .max-container > *:nth-child(2){
+        -ms-grid-row: 1;
+        -ms-grid-column: 2;
+  }
+    .max-container > *:nth-child(3){
+        -ms-grid-row: 1;
+        -ms-grid-column: 3;
+  }
+    .max-container > *:nth-child(4){
+        -ms-grid-row: 2;
+        -ms-grid-column: 1;
+  }
+    .max-container > *:nth-child(5){
+        -ms-grid-row: 2;
+        -ms-grid-column: 2;
+  }
+    .max-container > *:nth-child(6){
+        -ms-grid-row: 2;
+        -ms-grid-column: 3;
+  }
+    .max-container > *:nth-child(7){
+        -ms-grid-row: 3;
+        -ms-grid-column: 1;
+  }
+    .max-container > *:nth-child(8){
+        -ms-grid-row: 3;
+        -ms-grid-column: 2;
+  }
+    .max-container > *:nth-child(9){
+        -ms-grid-row: 3;
+        -ms-grid-column: 3;
+  }
+
+    .item-alfa, .item-beta{
+        width: 20px;
+        height: 20px;
+    }
+}
